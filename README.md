@@ -1,46 +1,88 @@
-# Java, Spring Boot Mini Project - Library Management System
+# 📚 Book Vault - Library Management System
 
+> A robust, secure web application built to streamline the daily operations of a modern library, including book inventory, author tracking, and administrative controls.
 
-# Local setup
+## 🎓 Academic Project Details
+* **Subject:** Software Development 
+* **Institute:** RC Technical Institute (RCTI) - IT Department (6th Semester)
+* **Team Members:**
+  * Hitarth Patel (236400316126)
+  * Manav Patel (236400316136)
+  * Yug Patel (236400316153)
+  * Mahil Parmar (236400316106)
 
-Step 1: Download or clone the source code from GitHub to the local machine
+---
 
-Step 2: Install JDK 17 - https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+## 🎯 Project Objective
+The primary goal of this micro-project is to develop a secure, efficient, and user-friendly Library Management System using Java and the Spring Boot framework. It provides full **CRUD** (Create, Read, Update, Delete) operations for managing library resources effectively.
 
-Step 3: Install IntelliJ IDEA or Eclipse or Apache NetBeans IDE
+## ⚙️ Technology Stack
+* **Backend:** Java 17, Spring Boot
+* **Build Tool:** Apache Maven
+* **IDE:** IntelliJ IDEA / Eclipse / VS Code
+* **Database:** H2 (In-Memory Database)
 
-Step 4: Install Apache Maven - https://maven.apache.org/install.html
+---
 
-Step 5:  ```mvn clean install```
+## 🚀 Key Features / Modules
+1.  **Secure Admin Access:** Protected login portal for administrators.
+2.  **Book Management:** Add, update, view, and delete books from the inventory.
+3.  **Author Records:** Maintain a database of authors and their details.
+4.  **Category Sorting:** Organize books by subject and genre.
+5.  **Publisher Directory:** Keep track of book publishers.
 
-Step 6:  ```mvn spring-boot:run```
+---
 
-Step 7: From the browser call the endpoint http://localhost:9080
+## 🛠️ Local Setup & Installation
 
-Step 8: Admin Login User Id: ```admin@admin.in``` & Password: ```Temp123```
+Follow these steps to run the project on your local machine:
 
+**Prerequisites:**
+* Ensure [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) is installed.
+* Ensure [Apache Maven](https://maven.apache.org/install.html) is installed.
 
-# Admin Login Interface
+**Execution Steps:**
+1.  **Clone the Repository:** Download the source code to your local machine.
+2.  **Clean and Install:** Open your terminal in the project folder and run:
+    `mvn clean install`
+3.  **Run the Application:** Start the Spring Boot server by running:
+    `mvn spring-boot:run`
+4.  **Access the App:** Open your web browser and navigate to:
+    `http://localhost:9080`
 
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiuctxupeOK4Nh8j-nomwwapjkcVvkYig3lX7qoifcXE76_6CnOXMZ-CLww7G180qegsCkrtyUlaqpJsWm9GzhX9QUFxyNyEUAXFD5UWJpvh2BdIr0wyAnFC38QOdsL_1vak8LtxYHrZyplCU_Sri-7kM9nXxI9heXXB0621rzJgL6j1CSweX6xjaorg/s945/admin-login.png">
+---
 
-# Add new books, update books, view books, delete books
+## 🔐 Default Admin Credentials
+To access the dashboard, use the following login details:
+* **Username:** `admin@admin.in`
+* **Password:** `Temp123`
 
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYMpuCQx3lGsS4T_H4ziyDWIkBpYV5qgo5JHFMV0Drper48H7YfygEdv0htE3yWo8mlypUW9W7NFY00UtrVznFfFYIzNGAXBeskhBb_kHAJrVKnI7O5mZt0_c085n6ir-cNVEYsTYffn6WgCmoBiZULR88ah_YxDC-ywRKPTsxj58GcHFnyyeX00RsNA/s800/library-management-system.png">
+---
 
-# Add new authors, update authors, view authors, delete authors
+## 📸 Project Screenshots
 
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixAW5k4E9IXf_OuVO1S5m100KS1xFo2ZrFoLnZYvNLjfpmIdI8W0ukd6yQn6oTsSWBKjDdAIGsnPf0EhgRwKzfpVq3mJXMcqG94Qp2oCCy0Pzf01b3kXP2ahgbvpFQND60c7cHwPNZ7A6uXh7fxqvB5od26PleS3giunEN-uAuFIuKijjELspH1_gLcw/s934/authors-list.png">
+### Admin Login Interface
+<img src="Images/admin-login.png" width="800">
 
-# Add new categories, update categories, view categories, delete categories
+### Dashboard & Book Management
+<img src="Images/books-list.png" width="800">
+<br><br>
+<img src="Images/add-book.png" width="800">
 
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYe6-eBO4HZjqE1Rr0PLoHS1dlvlnwuagwQtX6eRavoDsWRGk4yfguhWIdcOFRgM4H7985xL1bdiLQLqX_iU7RzddDb1yiQ0P3M0sfwUdTRlRGMg85Kp2KKTsVZH5WGlptL6LFRTITq4oSCJFFCZwGML1RrxI-chu-xb4eXOWIoZpNlFWLLUzkW6zLdQ/s935/categorylist.png">
+### Author Management
+<img src="Images/authors-list.png" width="800">
+<br><br>
+<img src="Images/add-author.png" width="800">
 
-# Add new publishers, update publishers, view publishers, delete publishers
+### Category Management
+<img src="Images/categories-list.png" width="800">
+<br><br>
+<img src="Images/add-category.png" width="800">
 
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcNQAd4UVi_bYQQSvW49hn0rQ1O7bEBDyN4DDNJSH1rtxBg37QIHQKAp7ELGbFV4Xva2F0DmhTkA3vKVeZcmKs7lODgTulsJr1aLyBckEojzxzZE5FYlfuEwD62Qco6PsjdNVPEWT76GlyVnSP94zNZK59w3CMRuvbYjoc1-MpyXj-WCeNEjPDm6mucw/s938/publishers-list.png">
-
-
+### Publisher Management
+<img src="Images/publishers-list.png" width="800">
+<br><br>
+<img src="Images/add-publisher.png" width="800">
 
 
 
