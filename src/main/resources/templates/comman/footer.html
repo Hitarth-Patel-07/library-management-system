@@ -1,30 +1,157 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Footer</title>
+<div th:fragment="footer" xmlns:th="http://www.thymeleaf.org">
+    <style>
+        /* BOOK VAULT Theme Styles - Footer */
+        .bookvault-footer-container {
+            width: 100%;
+            background-color: #11112b; /* Deep Navy Background */
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-top: 2px solid #00e5ff; /* Cyan border */
+            padding: 40px 0 20px 0;
+            margin-top: auto;
+            position: relative;
+            z-index: 100;
+        }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        .footer-inner-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 20px;
+        }
 
-</head>
-<body>
+        .footer-project-header {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column; /* Stack title and slogan on small screens */
+             margin-bottom: 30px;
+             gap: 10px;
+        }
+        
+        @media (min-width: 768px) {
+             .footer-project-header {
+                 flex-direction: row; /* Side by side on larger screens */
+                 gap: 20px;
+             }
+        }
 
+        .footer-project-title {
+            font-size: 1.4rem;
+            font-weight: 800; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #00e5ff; /* Cyan Text */
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0; /* Remove default margin */
+        }
+        
+        .footer-project-title i {
+            font-size: 1.2em;
+            color: white;
+        }
+        
+        /* New Slogan Style */
+        .footer-project-slogan {
+            font-size: 0.95rem;
+            color: #b0c4de; /* Light steel blue */
+            font-weight: 400;
+            font-style: italic;
+            border-left: none;
+            padding-left: 0;
+        }
+        
+        @media (min-width: 768px) {
+            .footer-project-slogan {
+                border-left: 1px solid #4a5568;
+                padding-left: 20px;
+            }
+        }
 
-	<!-- Footer -->
-	<footer class="page-footer font-small blue pt-4">
-		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">
-			© 2022 Copyright: <a href="https://www.knowledgefactory.net/">
-				www.knowledgefactory.net</a>
-		</div>
-		<!-- Copyright -->
+        .footer-student-row {
+            display: flex;
+            justify-content: center;
+            gap: 60px; 
+            flex-wrap: wrap;
+            margin-bottom: 35px;
+            width: 100%;
+        }
 
-	</footer>
-	<!-- Footer -->
-</body>
-</html>
+        .student-box {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .student-box:hover {
+            transform: translateY(-5px); /* Subtle lift effect */
+        }
+
+        .student-name-text {
+            color: #e2e8f0; 
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .student-enrollment {
+            color: #8892b0;
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .footer-bottom-info {
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 20px;
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+    </style>
+
+    <footer class="bookvault-footer-container">
+        <div class="footer-inner-content">
+            
+            <!-- Updated Project Header with Slogan -->
+            <div class="footer-project-header">
+                <div class="footer-project-title">
+                    <i class="fas fa-layer-group"></i> BOOK VAULT
+                </div>
+                <div class="footer-project-slogan">
+                    Secure management for your entire library.
+                </div>
+            </div>
+
+            <div class="footer-student-row">
+                <div class="student-box">
+                    <span class="student-name-text">Hitarth Patel</span>
+                    <span class="student-enrollment">236400316126</span>
+                </div>
+
+                <div class="student-box">
+                    <span class="student-name-text">Manav Patel</span>
+                    <span class="student-enrollment">236400316136</span>
+                </div>
+
+                <div class="student-box">
+                    <span class="student-name-text">Yug Patel</span>
+                    <span class="student-enrollment">236400316153</span>
+                </div>
+
+                <div class="student-box">
+                    <span class="student-name-text">Mahil Parmar</span>
+                    <span class="student-enrollment">236400316106</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom-info">
+                <p style="margin: 0 0 5px 0;">Subject: Software Development | 6th Sem - IT Department | Students of RCTI</p>
+                <p style="margin: 0;">&copy; 2025 Book Vault System. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </footer>
+</div>

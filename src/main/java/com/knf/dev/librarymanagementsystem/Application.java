@@ -34,7 +34,7 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-	@Bean
+	/**@Bean
 	public CommandLineRunner initialCreate() {
 		return (args) -> {
 
@@ -61,5 +61,5 @@ public class Application {
 			userRepository.save(user);
 
 		};
-	}
+	}**/
 }

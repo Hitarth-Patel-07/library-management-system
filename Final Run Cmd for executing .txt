@@ -1,0 +1,9 @@
+Step 1: Open the command prompt 
+
+Step 2: Open this path in cmd  -- D:\Sem-5 ( Micro-Project Details )\Advance Java Programming (AJP)\librarymanagementsystem
+
+Step 3: Paste this to cmd :  mvn spring-boot:run
+
+Step 4: From the browser call the endpoint http://localhost:9080
+
+Step 5: Admin Login User Id: admin@admin.in & Password: Temp123
