@@ -2,17 +2,6 @@
 
 > A robust, secure web application built to streamline the daily operations of a modern library, including book inventory, author tracking, and administrative controls.
 
-## 🎓 Academic Project Details
-* **Subject:** Software Development 
-* **Institute:** RC Technical Institute (RCTI) - IT Department (6th Semester)
-* **Team Members:**
-  * Hitarth Patel (236400316126)
-  * Manav Patel (236400316136)
-  * Yug Patel (236400316153)
-  * Mahil Parmar (236400316106)
-
----
-
 ## 🎯 Project Objective
 The primary goal of this micro-project is to develop a secure, efficient, and user-friendly Library Management System using Java and the Spring Boot framework. It provides full **CRUD** (Create, Read, Update, Delete) operations for managing library resources effectively.
 
