@@ -9,7 +9,7 @@ The primary goal of this micro-project is to develop a secure, efficient, and us
 * **Backend:** Java 17, Spring Boot
 * **Build Tool:** Apache Maven
 * **IDE:** IntelliJ IDEA / Eclipse / VS Code
-* **Database:** H2 (In-Memory Database)
+* **Database:** SQL Database 
 
 ---
 
